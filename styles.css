@@ -4,14 +4,36 @@ padding: 0;
 }
 
 body {
-  min-height: 100vh;
-  width: 100%;
-  background: white;
+font-family: 'Montserrat', sans-serif;
+font-size:1rem;
+background-image: url(https://static.vecteezy.com/system/resources/previews/000/217/374/original/vector-icebreaker-ship-illustration.jpg);
+}
+div, .square{
+  text-align:center;
 }
 
 h1{
   margin: 4%;
+  color:black;
+  text-transform: capitalize;
 }
+
+h3{
+  text-transform:uppercase;
+  margin: 4%;
+  background-color: coral;
+  border-radius:10px;
+
+}
+label{
+  text-transform:uppercase;
+}
+label h3{
+    margin: 4%;
+    background-color:yellow;
+    border-radius:10px;
+}
+
 
 ul{
   display: flex;
@@ -26,14 +48,13 @@ li{
 
 button{
   background-color: inherit;
-  border: solid;
-  margin-top: 40%;
+  border: 3px solid white;
   border-radius: 10px;
   padding: 5px 8px;
 }
 
 button:hover{
-  background-color: black;
+  background-color: lightseagreen;
   color: white;
   border: solid;
 }
@@ -41,20 +62,23 @@ button:hover{
 .square{
   color: white;
   margin: 1%;
-  background-color: black;
+  background-color: lightskyblue;
   width: 60px;
   height: 60px;
+  border-radius: 10px;
 }
 
 .game{
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  
 }
 
 .player{
+  border-radius: 20px;
   padding: 4%;
-  background-color: rgba(51, 50, 52, 0.21);
+  background-color: rgba(250, 199, 136, 0.5)
 }
 
 .player_information{
@@ -62,4 +86,12 @@ button:hover{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+.turn-winner p{
+  margin:10px;
+  font-size:3rem;
+  background-color: mediumvioletred;
+  font-weight: 800;
+  text-transform: uppercase;
 }

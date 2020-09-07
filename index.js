@@ -93,6 +93,7 @@ const buttonsActions = (e) => {
     board_Player1.innerText = ''; 
     board_Player2.innerText = '';
     removeMsg();
+    confetti.stop();
     createPlayersBoard(board_Player1);
     addShips(board_Player1);
     createPlayersBoard(board_Player2);
@@ -117,7 +118,9 @@ const battleShip = (e) => {
       currentPlayer = player1;
       if (player2_lives.textContent === "0") {
         message_Winner.style.display = "block";
-        message_Winner.innerHTML =`${currentPlayer.name}. WINS!`;
+        message_Winner.innerHTML =`${currentPlayer.name}. WINS!`
+        confetti.start();
+        
       }
     } else if (cell.value === 0) {
       cell.style.backgroundImage = 'url("explosion.png")';
@@ -131,7 +134,9 @@ const battleShip = (e) => {
       currentPlayer = player2;
       if (player1_lives.textContent === "0") {
         message_Winner.style.display = "block";
-        message_Winner.innerHTML =`${currentPlayer.name}. WINS!`;
+        message_Winner.innerHTML =`${currentPlayer.name} WINS!`;
+        confetti.start();
+        
       }
     } else if (cell.value === 0) {
       currentPlayer = player1;

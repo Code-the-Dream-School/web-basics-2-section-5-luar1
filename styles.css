@@ -6,31 +6,40 @@ padding: 0;
 body {
 font-family: 'Montserrat', sans-serif;
 font-size:1rem;
-background-image: url(https://static.vecteezy.com/system/resources/previews/000/217/374/original/vector-icebreaker-ship-illustration.jpg);
+background-color: #187374;
+background-image: url('bk.jpg');
+background-size: cover;
+background-repeat: repeat;
+background-position: center center;
+
 }
+
 div, .square{
   text-align:center;
 }
 
-h1{
+label, button, .square,.player_information, .turn-winner{
+  color:white;
+  border-radius: 10px;
+}
+
+h1, h3{
   margin: 4%;
-  color:black;
-  text-transform: capitalize;
+  color:white;
 }
 
 h3{
-  text-transform:uppercase;
-  margin: 4%;
-  background-color: coral;
+  background-color: #E5B127;
+  border:2px solid white;
   border-radius:10px;
+  color:black;
 
 }
-label{
+label, button, h1, h3{
   text-transform:uppercase;
 }
 label h3{
-    margin: 4%;
-    background-color:yellow;
+    background-color:red;
     border-radius:10px;
 }
 
@@ -47,51 +56,65 @@ li{
 }
 
 button{
-  background-color: inherit;
-  border: 3px solid white;
-  border-radius: 10px;
-  padding: 5px 8px;
+  background-color: #0A2E2E;
+  padding: 25px;
+  margin:10px;
+  border:2px solid #0A2E2E;
+  font-size:1rem;
 }
 
 button:hover{
-  background-color: lightseagreen;
-  color: white;
-  border: solid;
+  background-color: white;
+  color: #0A2E2E;
+
 }
 
 .square{
-  color: white;
   margin: 1%;
-  background-color: lightskyblue;
+  background-color:#0A2E2E;
   width: 60px;
   height: 60px;
-  border-radius: 10px;
 }
 
 .game{
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  flex-direction: row nowrap;
+  justify-content: center;
+  align-items: flex-start;
   
 }
 
 .player{
   border-radius: 20px;
   padding: 4%;
-  background-color: rgba(250, 199, 136, 0.5)
+  background-color: #64deeb80;
 }
 
 .player_information{
   margin: 10% 0;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
+  background-color: #0746e4;
+  padding:20px;
+  border:2px solid
+
 }
 
 .turn-winner p{
   margin:10px;
-  font-size:3rem;
-  background-color: mediumvioletred;
+  font-size:2.5rem;
+  background-color: red;
   font-weight: 800;
+  padding:10px;
   text-transform: uppercase;
+
+}
+
+.turn-winner label{
+  margin:10px;
+  font-size:2.5rem;
+  font-weight: 800;
+
+
 }
